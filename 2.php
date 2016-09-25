@@ -73,7 +73,7 @@
         </div>
       </section>
 
-      <section class="whats-coming-up">
+      <section class="whats-coming-up list">
         <div class="container">
           <h2>What's coming up</h2>
           <ul class="columns group">
@@ -81,12 +81,17 @@
           <?php for ($i=0; $i < 5; $i++) { ?>
 
             <li>
-              <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-                <h3>The name of a Course</h3>
-                <div class="image" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
-                <div class="date">7.00 pm, Monday 8th November</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="col-xs-12">
+                <div class="image col-md-6" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
+                <div class="col-md-6">
+                  <h3>The name of a Course</h3>
+                  <div class="date">7.00 pm, Monday 8th November</div>
+                  <div class="location">Buckingham Palace</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat.</p>
+                </div>
               </div>
             </li>
             
@@ -99,7 +104,7 @@
         </div>
       </section>
 
-      <section class="regular-courses">
+      <section class="regular-courses list">
         <div class="container">
           <h2>Regular courses</h2>
           <ul class="columns group">
@@ -107,11 +112,13 @@
           <?php for ($i=0; $i < 4; $i++) { ?>
 
             <li>
-              <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-                <h3>One of the courses</h3>
-                <div class="image" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="col-xs-12">
+                <div class="image col-md-6" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
+                <div class="col-md-6">
+                  <h3>One of the courses</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>                  
+                </div>
               </div>
             </li>
             
@@ -125,7 +132,7 @@
       </section>
 
 
-      <section class="tutors">
+      <section class="tutors list">
         <div class="container">
           <h2>Our tutors</h2>
           <ul class="columns group">
@@ -133,11 +140,13 @@
           <?php for ($i=0; $i < 4; $i++) { ?>
 
             <li>
-              <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-                <h3>Name of a tutor</h3>
-                <div class="image" style="background-image: url(/img/tutors/<?php echo $i; ?>.jpg)"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
+              <div class="col-xs-12">
+                <div class="image col-md-6" style="background-image: url(/img/tutors/<?php echo $i; ?>.jpg)"></div>
+                <div class="col-md-6">
+                  <h3>Name of a tutor</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua.</p>                  
+                </div>
               </div>
             </li>
             

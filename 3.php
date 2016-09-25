@@ -23,6 +23,9 @@
     <!-- My CSS -->
     <link href="style.css" rel="stylesheet">
 
+    <!-- Slick CSS -->
+    <link href="slick/slick/slick.css" rel="stylesheet">
+
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="bootstrap/docs/assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="bootstrap/docs/assets/js/ie-emulation-modes-warning.js"></script>
@@ -74,25 +77,24 @@
       </section>
 
       <section class="whats-coming-up">
-        <div class="container">
+        <div class="container squidge col-xs-11"> <!-- this is weird -->
           <h2>What's coming up</h2>
-          <ul class="columns group">
+          <div class="carousel">
 
           <?php for ($i=0; $i < 5; $i++) { ?>
 
-            <li>
-              <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-                <h3>The name of a Course</h3>
-                <div class="image" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
-                <div class="date">7.00 pm, Monday 8th November</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </li>
+            <div class="carousel-item">
+              <h3>The name of a Course</h3>
+              <div class="image" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
+              <div class="date">7.00 pm, Monday 8th November</div>
+              <div class="location">Buckingham Palace</div> 
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
             
           <?php } ?>
 
-          </ul>
+          </div>
 
           <div class="button col-md-4 col-sm-6 col-xs-12">View all upcoming courses</div>
 
@@ -100,20 +102,18 @@
       </section>
 
       <section class="regular-courses">
-        <div class="container">
+        <div class="container squidge col-xs-11"> <!-- this is weird -->
           <h2>Regular courses</h2>
-          <ul class="columns group">
+          <ul class="carousel">
 
           <?php for ($i=0; $i < 4; $i++) { ?>
 
-            <li>
-              <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-                <h3>One of the courses</h3>
-                <div class="image" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </li>
+            <div class="carousel-item">
+              <h3>One of the courses</h3>
+              <div class="image" style="background-image: url(/img/<?php echo rand(0,4); ?>.jpg)"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
             
           <?php } ?>
 
@@ -126,24 +126,22 @@
 
 
       <section class="tutors">
-        <div class="container">
+        <div class="container squidge col-xs-11"> <!-- this is weird -->
           <h2>Our tutors</h2>
-          <ul class="columns group">
+          <div class="carousel">
 
           <?php for ($i=0; $i < 4; $i++) { ?>
 
-            <li>
-              <div class="grid-item col-xs-12 col-sm-6 col-md-4">
-                <h3>Name of a tutor</h3>
-                <div class="image" style="background-image: url(/img/tutors/<?php echo $i; ?>.jpg)"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua.</p>
-              </div>
-            </li>
+            <div class="carousel-item">
+              <h3>Name of a tutor</h3>
+              <div class="image" style="background-image: url(/img/tutors/<?php echo $i; ?>.jpg)"></div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
             
           <?php } ?>
 
-          </ul>
+          </div>
 
           <div class="button col-md-4 col-sm-6 col-xs-12">View all our tutors</div>
 
@@ -167,5 +165,7 @@
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="bootstrap/docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="slick/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
